@@ -1,0 +1,22 @@
+<application>
+  <component name="AppStorage">
+    <histories>
+      <item value="/** * Returns a {@code BigDecimal} whose value is {@code (this - * subtrahend)}, and whose scale is {@code max(this.scale(), * subtrahend.scale())}. * * @param subtrahend value to be subtracted from this {@code BigDecimal}. * @return {@code this - subtrahend} */" />
+      <item value="Redis Template" />
+      <item value="节点属性关联表控制层" />
+      <item value="Class String is special cased within the Serialization Stream Protocol." />
+      <item value="/** * The {@code String} class represents character strings. All * string literals in Java programs, such as {@code &quot;abc&quot;}, are * implemented as instances of this class. * &lt;p&gt; * Strings are constant; their values cannot be changed after they * are created. String buffers support mutable strings. * Because String objects are immutable they can be shared. For example: * &lt;blockquote&gt;&lt;pre&gt; * String str = &quot;abc&quot;; * &lt;/pre&gt;&lt;/blockquote&gt;&lt;p&gt; * is equivalent to: * &lt;blockquote&gt;&lt;pre&gt; * char data[] = {'a', 'b', 'c'}; * String str = new String(data); * &lt;/pre&gt;&lt;/blockquote&gt;&lt;p&gt; * Here are some more examples of how strings can be used: * &lt;blockquote&gt;&lt;pre&gt; * System.out.println(&quot;abc&quot;); * String cde = &quot;cde&quot;; * System.out.println(&quot;abc&quot; + cde); * String c = &quot;abc&quot;.substring(2,3); * String d = cde.substring(1, 2); * &lt;/pre&gt;&lt;/blockquote&gt; * &lt;p&gt; * The class {@code String} includes methods for examining * individual characters of the sequence, for comparing strings, for * searching strings, for extracting substrings, and for creating a * copy of a string with all characters translated to uppercase or to * lowercase. Case mapping is based on the Unicode Standard version * specified by the {@link java.lang.Character Character} class. * &lt;p&gt; * The Java language provides special support for the string * concatenation operator (&amp;nbsp;+&amp;nbsp;), and for conversion of * other objects to strings. String concatenation is implemented * through the {@code StringBuilder}(or {@code StringBuffer}) * class and its {@code append} method. * String conversions are implemented through the method * {@code toString}, defined by {@code Object} and * inherited by all classes in Java. For additional information on * string concatenation and conversion, see Gosling, Joy, and Steele, * &lt;i&gt;The Java Language Specification&lt;/i&gt;. * * &lt;p&gt; Unless otherwise noted, passing a &lt;tt&gt;null&lt;/tt&gt; argument to a constructor * or method in this class will cause a {@link NullPointerException} to be * thrown. * * &lt;p&gt;A {@code String} represents a string in the UTF-16 format * in which &lt;em&gt;supplementary characters&lt;/em&gt; are represented by &lt;em&gt;surrogate * pairs&lt;/em&gt; (see the section &lt;a href=&quot;Character.html#unicode&quot;&gt;Unicode * Character Representations&lt;/a&gt; in the {@code Character} class for * more information). * Index values refer to {@code char} code units, so a supplementary * character uses two positions in a {@code String}. * &lt;p&gt;The {@code String} class provides methods for dealing with * Unicode code points (i.e., characters), in addition to those for * dealing with Unicode code units (i.e., {@code char} values). * * @author Lee Boynton * @author Arthur van Hoff * @author Martin Buchholz * @author Ulf Zibis * @see java.lang.Object#toString() * @see java.lang.StringBuffer * @see java.lang.StringBuilder * @see java.nio.charset.Charset * @since JDK1.0 */" />
+      <item value="The {@code String} class represents character strings. All" />
+      <item value="出现主键冲突异常时进行捕获" />
+      <item value="cheap,show me the code" />
+      <item value="conver In Or Out Data" />
+    </histories>
+    <option name="languageScores">
+      <map>
+        <entry key="CHINESE" value="6" />
+        <entry key="ENGLISH" value="7" />
+        <entry key="FRENCH" value="1" />
+      </map>
+    </option>
+  </component>
+</application>

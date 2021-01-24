@@ -1,0 +1,12 @@
+<templateSet group="mygroup">
+  <template name="*" value="*&#10; * &#10; * $VAR1$ &#10; $params$* @return $returns$&#10; * @author xiejr&#10; * @description: Talk is cheap,show me the code&#10; * @date $date$ $time$&#10; */&#10;" shortcut="ENTER" description="methods comments" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="groovyScript(&quot; &#9;def result='';   &#9;def params=\&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList();    &#9;for(i = 0; i &lt; params.size(); i++) {   &#9; &#9;&#9;if(i!=0)result+= ' * ';    &#9; &#9;&#9;result+='@param ' + params[i] + ((i &lt; (params.size() - 1)) ? '\\n' + '\\t' : '');    &#9;};     &#9;return result&quot;, methodParameters()) " defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="returns" expression="methodReturnType()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
