@@ -44,7 +44,7 @@
                     <option name="name" value="dao.java" />
                   </Template>
                   <Template>
-                    <option name="code" value="#set($hasOrg=false)&#10;#foreach($column in $tableInfo.fullColumn))&#10;#if($column.name.equals(&quot;orgId&quot;))&#10;#set($hasOrg=true)&#10;#end&#10;#end&#10;##引入宏定义&#10;$!define&#10;$!init&#10;##使用宏定义设置回调（保存位置与文件后缀）&#10;$!callback.setFileName($tool.append($tableInfo.name, &quot;.java&quot;))&#10;$!callback.setSavePath($tool.append($tableInfo.savePath, &quot;/entity&quot;))&#10;&#10;#if($tableInfo.savePackageName)package $!{tableInfo.savePackageName}.#{end}entity;&#10;##使用全局变量实现默认包导入&#10;$!autoImport&#10;import java.io.Serializable;&#10;import com.gaoding.orm.annotation.IdGenerator;&#10;import com.gaoding.orm.entity.BaseOrgEntity;&#10;import com.gaoding.orm.enumcode.IdGeneratorType;&#10;import lombok.*;&#10;import javax.persistence.Entity;&#10;import javax.persistence.Table;&#10;import com.gaoding.orm.entity.BaseEntity;&#10;&#10;&#10;##使用宏定义实现类注释信息&#10;#tableComment(&quot;实体类&quot;)&#10;@Data&#10;@Entity&#10;@Builder&#10;@NoArgsConstructor&#10;@AllArgsConstructor&#10;@EqualsAndHashCode(callSuper = true)&#10;@Accessors(chain=true)&#10;@Table(name = &quot;$!{tableInfo.obj.name}&quot;)&#10;#if($hasOrg)&#10;public class $!{tableInfo.name} extends BaseEntity implements Serializable&#10;#end&#10;public class $!{tableInfo.name} extends BaseEntity implements Serializable {&#10;    private static final long serialVersionUID = $!tool.serial();&#10;#foreach($column in $tableInfo.fullColumn)&#10;    #if(!$column.name.equals(&quot;orgId&quot;) &amp;&amp; !$column.name.equals(&quot;id&quot;)&#10;    &amp;&amp; !$column.name.equals(&quot;createdBy&quot;) &amp;&amp; !$column.name.equals(&quot;createdAt&quot;)&#10;    &amp;&amp; !$column.name.equals(&quot;updatedBy&quot;) &amp;&amp; !$column.name.equals(&quot;updatedAt&quot;))&#10;    &#10;    /**&#10;     *  ${column.comment}&#10;     */&#10;    &#10;    private $!{tool.getClsNameByFullName($column.type)} $!{column.name};&#10;    #end&#10;    &#10;#end&#10;&#10;&#10;&#10;}" />
+                    <option name="code" value="##引入宏定义&#10;$!define&#10;$!init&#10;#if($tableInfo.savePackageName)package $!{tableInfo.savePackageName}.#{end}entity;&#10;##使用宏定义设置回调（保存位置与文件后缀）&#10;$!callback.setFileName($tool.append($tableInfo.name, &quot;.java&quot;))&#10;$!callback.setSavePath($tool.append($tableInfo.savePath, &quot;/entity&quot;))&#10;#set($hasOrg=false)&#10;#foreach($column in $tableInfo.fullColumn))&#10;#if($column.name.equals(&quot;orgId&quot;))&#10;    #set($hasOrg=true)&#10;#end&#10;#end&#10;&#10;&#10;##使用全局变量实现默认包导入&#10;import java.io.Serializable;&#10;import com.gaoding.orm.annotation.IdGenerator;&#10;import com.gaoding.orm.entity.BaseOrgEntity;&#10;import com.gaoding.orm.enumcode.IdGeneratorType;&#10;import lombok.*;&#10;import javax.persistence.Entity;&#10;import javax.persistence.Table;&#10;#if($hasOrg)&#10;import com.gaoding.orm.entity.BaseOrgEntity;&#10;#else&#10;import com.gaoding.orm.entity.BaseEntity;&#10;#end&#10;&#10;&#10;##使用宏定义实现类注释信息&#10;#tableComment(&quot;实体类&quot;)&#10;@Data&#10;@Entity&#10;@Builder&#10;@NoArgsConstructor&#10;@AllArgsConstructor&#10;@EqualsAndHashCode(callSuper = true)&#10;@Accessors(chain=true)&#10;@Table(name = &quot;$!{tableInfo.obj.name}&quot;)&#10;#if($hasOrg)&#10;public class $!{tableInfo.name} extends BaseOrgEntity implements Serializable{&#10;#else&#10;public class $!{tableInfo.name} extends BaseEntity implements Serializable {&#10;#end&#10;    private static final long serialVersionUID = $!tool.serial();&#10;#foreach($column in $tableInfo.fullColumn)&#10;    #if(!$column.name.equals(&quot;orgId&quot;) &amp;&amp; !$column.name.equals(&quot;id&quot;)&#10;    &amp;&amp; !$column.name.equals(&quot;createdBy&quot;) &amp;&amp; !$column.name.equals(&quot;createdAt&quot;)&#10;    &amp;&amp; !$column.name.equals(&quot;updatedBy&quot;) &amp;&amp; !$column.name.equals(&quot;updatedAt&quot;))&#10;    &#10;    /**&#10;     *  ${column.comment}&#10;     */&#10;    &#10;    private $!{tool.getClsNameByFullName($column.type)} $!{column.name};&#10;    #end&#10;    &#10;#end&#10;&#10;&#10;&#10;}" />
                     <option name="name" value="entity.java" />
                   </Template>
                   <Template>
@@ -170,7 +170,7 @@
                   </TypeMapper>
                   <TypeMapper>
                     <option name="columnType" value="decimal(\(\d+\))?" />
-                    <option name="javaType" value="java.lang.Double" />
+                    <option name="javaType" value="java.math.BigDecimal" />
                   </TypeMapper>
                   <TypeMapper>
                     <option name="columnType" value="decimal(\(\d+,\d+\))?" />
@@ -210,11 +210,11 @@
                   </TypeMapper>
                   <TypeMapper>
                     <option name="columnType" value="tinyint(\(\d+\))?" />
-                    <option name="javaType" value="java.lang.Object" />
+                    <option name="javaType" value="java.lang.Integer" />
                   </TypeMapper>
                   <TypeMapper>
-                    <option name="columnType" value="tinyint" />
-                    <option name="javaType" value="java.lang.Object" />
+                    <option name="columnType" value="tinyint(\(\d+\))? unsigned" />
+                    <option name="javaType" value="java.lang.Integer" />
                   </TypeMapper>
                 </list>
               </option>
