@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="assert Demand Or Throw" />
       <item value="服务已配置" />
       <item value="已经配置过字典内容" />
       <item value="不知道写的什么垃圾" />
@@ -10,11 +11,11 @@
     <option name="languageScores">
       <map>
         <entry key="CHINESE" value="4" />
-        <entry key="ENGLISH" value="4" />
+        <entry key="ENGLISH" value="5" />
       </map>
     </option>
   </component>
   <component name="Cache">
-    <option name="lastTrimTime" value="1611727228294" />
+    <option name="lastTrimTime" value="1612677282796" />
   </component>
 </application>
