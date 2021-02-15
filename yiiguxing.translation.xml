@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="Creates a new {@code ThreadPoolExecutor} with the given initial parameters and default thread factory and rejected execution handler. It may be more convenient to use one of the {@link Executors} factory methods instead of this general purpose constructor. @param corePoolSize the number of threads to keep in the pool, even if they are idle, unless {@code allowCoreThreadTimeOut} is set @param maximumPoolSize the maximum number of threads to allow in the pool @param keepAliveTime when the number of threads is greater than the core, this is the maximum time that excess idle threads will wait for new tasks before terminating. @param unit the time unit for the {@code keepAliveTime} argument @param workQueue the queue to use for holding tasks before they are executed. This queue will hold only the {@code Runnable} tasks submitted by the {@code execute} method. @throws IllegalArgumentException if one of the following holds:&lt;br&gt; {@code corePoolSize &lt; 0}&lt;br&gt; {@code keepAliveTime &lt; 0}&lt;br&gt; {@code maximumPoolSize &lt;= 0}&lt;br&gt; {@code maximumPoolSize &lt; corePoolSize} @throws NullPointerException if {@code workQueue} is null" />
       <item value="assert Demand Or Throw" />
       <item value="服务已配置" />
       <item value="已经配置过字典内容" />
@@ -10,12 +11,12 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="4" />
-        <entry key="ENGLISH" value="5" />
+        <entry key="CHINESE" value="5" />
+        <entry key="ENGLISH" value="6" />
       </map>
     </option>
   </component>
   <component name="Cache">
-    <option name="lastTrimTime" value="1612677282796" />
+    <option name="lastTrimTime" value="1613367158897" />
   </component>
 </application>
