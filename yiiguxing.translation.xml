@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="Note that enum values use C++ scoping rules, meaning that enum values are siblings of their type, not children of it. Therefore, &quot;ACTIVE&quot; must be unique within the global scope, not just within &quot;DemanderStatus&quot;." />
       <item value="获取旧数据" />
       <item value="启用的" />
       <item value="禁用的" />
@@ -17,7 +18,7 @@
     <option name="languageScores">
       <map>
         <entry key="CHINESE" value="10" />
-        <entry key="ENGLISH" value="10" />
+        <entry key="ENGLISH" value="11" />
       </map>
     </option>
   </component>
