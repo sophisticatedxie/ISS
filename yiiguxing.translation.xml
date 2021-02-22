@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="social credit code" />
       <item value="If the specified key is not already associated with a value (or is mapped to {@code null}), attempts to compute its value using the given mapping function and enters it into this map unless {@code null}." />
       <item value="规范" />
       <item value="Note that enum values use C++ scoping rules, meaning that enum values are siblings of their type, not children of it. Therefore, &quot;ACTIVE&quot; must be unique within the global scope, not just within &quot;DemanderStatus&quot;." />
@@ -19,8 +20,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="11" />
-        <entry key="ENGLISH" value="12" />
+        <entry key="CHINESE" value="12" />
+        <entry key="ENGLISH" value="13" />
       </map>
     </option>
   </component>
