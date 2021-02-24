@@ -1,6 +1,10 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="未删除" />
+      <item value="已删除" />
+      <item value="逻辑" />
+      <item value="逻辑删除" />
       <item value="身份证正则字符串" />
       <item value="身份证" />
       <item value="Specifies the component model to which the generated mapper should adhere. Supported values are &lt;ul&gt; &lt;li&gt; {@code default}: the mapper uses no component model, instances are typically retrieved via {@link MappersgetMapper(Class)}&lt;li&gt; &lt;li&gt; {@code cdi}: the generated mapper is an application-scoped CDI bean and can be retrieved via {@code @Inject}&lt;li&gt; &lt;li&gt; {@code spring}: the generated mapper is a Spring bean and can be retrieved via {@code @Autowired}&lt;li&gt; &lt;li&gt; {@code jsr330}: the generated mapper is annotated with {@code @javax.inject.Named} and {@code @Singleton}, and can be retrieved via {@code @Inject}&lt;li&gt; &lt;ul&gt; The method overrides an unmappedTargetPolicy set in a central configuration set by {@link config() }" />
@@ -25,8 +29,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="17" />
-        <entry key="ENGLISH" value="17" />
+        <entry key="CHINESE" value="21" />
+        <entry key="ENGLISH" value="21" />
       </map>
     </option>
   </component>
