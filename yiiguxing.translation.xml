@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="The string has to be a well-formed email address. Exact semantics of what makes up a valid email address are left to Bean Validation providers. Accepts {@code CharSequence}." />
       <item value="Currently not in use" />
       <item value="未删除" />
       <item value="已删除" />
@@ -30,8 +31,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="21" />
-        <entry key="ENGLISH" value="22" />
+        <entry key="CHINESE" value="22" />
+        <entry key="ENGLISH" value="23" />
       </map>
     </option>
   </component>
