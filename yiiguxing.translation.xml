@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="The largest possible table capacity. This value must be exactly 1&lt;&lt;30 to stay within Java array allocation and indexing bounds for power of two table sizes, and is further required because the top two bits of 32bit hash fields are used for control purposes." />
       <item value="The string has to be a well-formed email address. Exact semantics of what makes up a valid email address are left to Bean Validation providers. Accepts {@code CharSequence}." />
       <item value="Currently not in use" />
       <item value="未删除" />
@@ -31,12 +32,12 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="22" />
-        <entry key="ENGLISH" value="23" />
+        <entry key="CHINESE" value="23" />
+        <entry key="ENGLISH" value="24" />
       </map>
     </option>
   </component>
   <component name="Cache">
-    <option name="lastTrimTime" value="1613814785403" />
+    <option name="lastTrimTime" value="1614325697145" />
   </component>
 </application>
